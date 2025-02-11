@@ -103,6 +103,11 @@ export const RegisterForm = () => {
             <Button type="submit" variant="contained" color="primary" fullWidth>
                 Register
             </Button>
+            <Button type="button" variant="contained" color="primary" 
+                onClick={() => {router.push("/login")}}
+            fullWidth>
+                Login
+            </Button>
         </Box>
     );
 };
