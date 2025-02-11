@@ -19,6 +19,10 @@ export const UserProfile = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
+    if (!email || !token ) { 
+        router.push("/register")
+    }
+
     useEffect(() => {
         const fetchUserData = async () => {
             try {
