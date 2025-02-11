@@ -31,7 +31,7 @@ export const RegisterForm = () => {
             const { data, error } = response;
             if (!error) {
                 alert("registration successful!");
-                router.push("/login"); 
+                router.push("/login");
             } else {
                 alert("something went wrong!");
             }
@@ -103,9 +103,9 @@ export const RegisterForm = () => {
             <Button type="submit" variant="contained" color="primary" fullWidth>
                 Register
             </Button>
-            <Button type="button" variant="contained" color="primary" 
-                onClick={() => {router.push("/login")}}
-            fullWidth>
+            <Button type="button" variant="contained" color="secondary"
+                onClick={() => { router.push("/login") }}
+                fullWidth>
                 Login
             </Button>
         </Box>
